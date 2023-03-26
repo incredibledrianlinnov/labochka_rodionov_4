@@ -1,0 +1,48 @@
+﻿@model Calculator
+@{
+    ViewData["Title"] = "MEOW";
+}
+
+<html>
+<head>
+    <title>LABA 4 UwU</title>
+</head>
+<body>
+    <p style="text-align:center"><span style="font-size:22px">Калькулятор</span></p>
+
+    <p style="text-align:center"><span style="font-size:12px"><em>(4 л.р. Андрианова ИСТбд-22)</em></span></p>
+
+    <div class="row">
+        <form method ="post"> 
+            <div class="form-group"> 
+                <input asp-for="ValueOne" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="ValueTwo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Result"></label>
+                <input asp-for="Result" class="form-control" value="@Model.Result"/>
+            </div>
+            <div>
+                <input asp-for="Operator" type="radio" value="add" />
+                +
+            </div>
+            <div>
+                <input asp-for="Operator" type="radio" value="min" />
+                -
+            </div>
+            <div>
+                <input asp-for="Operator" type="radio" value="mul" />
+                *
+            </div>
+            <input type="submit" />
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
+
