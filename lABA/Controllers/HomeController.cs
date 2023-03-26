@@ -8,10 +8,10 @@ namespace lABA.Controllers
     {
         public IActionResult Index()
         {
-            return View(new Calculator());
+            return View(new CalculatorModel());
         }
         [HttpPost]
-        public IActionResult Index(Calculator model)
+        public IActionResult Index(CalculatorModel model)
         {
             switch (model.Operator)
             {

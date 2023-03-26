@@ -1,6 +1,6 @@
 ﻿namespace lABA.Models
 {
-    public class Calculator
+    public class CalculatorModel
     {
         public sbyte ValueOne { get; set; }
         public decimal ValueTwo { get; set; }
